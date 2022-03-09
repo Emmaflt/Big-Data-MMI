@@ -1,7 +1,11 @@
 
 html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
+  }
 
+  body {
+    font-family: Lato, sans-serif;
+    background-color:black;
   }
 
 .container_1 {
@@ -40,10 +44,7 @@ html {
     background-color: #ffccbc;
   }
   
-  body {
-    font-family: Lato, sans-serif;
-    background-color:black;
-  }
+ 
   
   .wrapper {
     max-width: 800px;
