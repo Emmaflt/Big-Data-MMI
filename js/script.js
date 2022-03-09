@@ -1,1 +1,0 @@
-dataText = document.getElementById("data");

@@ -1,8 +1,4 @@
-html {
-    /* scroll-behavior: smooth; */
-  }
-
-  body {
+ body {
     font-family: Lato, sans-serif;
     background-color:black;
   }
@@ -45,7 +41,7 @@ html {
 
   canvas {
     width: 60%;
-    height: 60%;
+    height: 70%;
     margin: auto;
     position: relative;
   }
