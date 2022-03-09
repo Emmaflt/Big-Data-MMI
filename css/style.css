@@ -1,4 +1,3 @@
-
 html {
     /* scroll-behavior: smooth; */
   }
@@ -42,6 +41,13 @@ html {
   
   .section-5 {
     background-color: #ffccbc;
+  }
+
+  canvas {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    position: relative;
   }
   
  
