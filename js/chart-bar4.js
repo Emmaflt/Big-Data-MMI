@@ -51,13 +51,3 @@ const ctx4 = document.getElementById('chart4').getContext('2d');
 
     });
   
-  
-  
-  
-//     // récup. des data de l'image
-// let dataImage = canvas.toDataURL("image/png");
-// // modifie le type de données
-// dataImage = dataImage.replace("image/png", "image/octet-stream");
-// // affectation de l'adresse
-// lien.href = dataImage;
-
