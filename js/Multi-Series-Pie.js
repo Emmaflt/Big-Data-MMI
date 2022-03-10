@@ -2,7 +2,7 @@ const ctxPie = document.getElementById('chartPie').getContext('2d');
     const chartPie = new Chart(ctxPie, {
         type: 'pie',
         data: {
-            labels: ['épouses', 'autres', 'concubines', 'physique', 'autres', 'psychologique', 'séparation', 'autres', 'jalousie', 'dispute', '109 femmes décédés en 2016' ], //nom de chaque colonne
+            labels: ['épouses', 'autres', 'concubines', 'physique', 'autres', 'psychologique', 'séparation', 'autres', 'dispute', '109 femmes décédés en 2016' ], //nom de chaque colonne
             datasets: [        
             {
                 // 3 couronne
@@ -16,8 +16,8 @@ const ctxPie = document.getElementById('chartPie').getContext('2d');
             },
             {
                 // 1 couronne
-                data: [47, 27, 11, 15],
-                backgroundColor: ['#7FE0FF', '#4E95FF','#4E95FF','#7EB1FF'],
+                data: [47, 38, 15],
+                backgroundColor: ['#7FE0FF', '#4E95FF','#7EB1FF'],
             },
             {
                 //centre
