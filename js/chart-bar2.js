@@ -6,22 +6,18 @@ const ctx2 = document.getElementById('chart2').getContext('2d');
             datasets: [        
             {
                 label: "Mineur",
-                fillColor: "blue",
-                data: [92,34,0,66],
+                data: dataMineur,
                 backgroundColor: 'rgba(255, 206, 86, 1)',
 
             },
             {
                 label: "Majeur",
-                fillColor: "red",
-                data: [90,11,1,88],
+                data: dataMajeur,
                 backgroundColor: 'rgba(54, 162, 235, 0.2)'
-
             },
             {
                 label: "Ensemble",
-                fillColor: "green",
-                data: [90,17,1,82],
+                data: dataEnsemble,
                 borderColor: 'rgba(75, 192, 192, 0.2)',
                 backgroundColor: 'rgba(75, 192, 192, 1)',
             }

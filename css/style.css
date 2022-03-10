@@ -58,11 +58,30 @@ p {
   margin-bottom: 10px;
 
 }
-
- 
   
 .wrapper {
   height: 80%;
   width: auto;
   }
   
+button {
+  background-color:transparent;
+  border: solid rgba(75, 192, 192, 0.5);
+  border-radius: 5px;
+  transition: 0.3s;
+  padding: 0 10px;
+  color:rgba(75, 192, 192, 1) ;
+  margin-top: 20px;
+  font-size:large;
+  align-self: flex-end;
+}
+
+button:hover {
+  background-color: rgba(75, 192, 192, 0.3);
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
