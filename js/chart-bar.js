@@ -2,11 +2,11 @@ const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['18-39 ans', '40-75 ans', 'Yellow', 'Green', 'Purple', 'Orange'],
             datasets: [{
                 label: '# of Votes',
                 data: [1, 1, 1, 1, 1, 3],
-                backgroundColor: [
+                backgroundColor: [ //la couleur de l'intérieur des barres
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
@@ -14,7 +14,7 @@ const ctx = document.getElementById('myChart').getContext('2d');
                     'rgba(153, 102, 255, 0.2)',
                     'rgba(255, 159, 64, 0.2)'
                 ],
-                borderColor: [
+                borderColor: [ //la couleur du bord des barres
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
