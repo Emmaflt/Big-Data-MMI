@@ -2,41 +2,31 @@ const ctxPie = document.getElementById('chartPie').getContext('2d');
     const chartPie = new Chart(ctxPie, {
         type: 'pie',
         data: {
-            labels: [['Overall Yay', 'Overall Nay', 'Group A Yay', 'Group A Nay', 'Group B Yay', 'Group B Nay', 'Group C Yay', 'Group C Nay']], //nom de chaque colonne
+            labels: [], //nom de chaque colonne
             datasets: [        
             {
-                label: "Mineur",
-                fillColor: "blue",
-                data: [21, 79],
-                backgroundColor: ['#AAA', '#777'],
-
+                // 3 couronne
+                data: [50, 17, 33 ],
+                backgroundColor: ['#FFC85C','#FF6666','#E22929',],
             },
             {
-                label: "Majeur",
-                fillColor: "red",
-                data: [20, 80],
-                backgroundColor:['hsl(100, 100%, 60%)', 'hsl(100, 100%, 35%)']
-
+                // 2 couronne
+                data: [63, 22 , 15],
+                backgroundColor:['#9FE8AA', '#F4FF76', '#EAEE20']
             },
             {
-                label: "Ensemble",
-                fillColor: "green",
-                data: [33, 67],
-                backgroundColor: ['hsl(0, 100%, 60%)', 'hsl(0, 100%, 35%)'],
+                // 1 couronne
+                data: [47, 27, 11, 15],
+                backgroundColor: ['#7FE0FF', '#4E95FF','#4E95FF','#7EB1FF'],
             },
             {
-                label: "Ensemble",
-                fillColor: "green",
-                data: [10, 90],
-                backgroundColor: ['hsl(180, 100%, 60%)', 'hsl(180, 100%, 35%)'],
+                //centre
+                data: [100, 0],
+                backgroundColor: ['#B64CDC', '#000'],
             },
 
             ]},
         options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
+            responsive: true,      
         }
     });
