@@ -27,14 +27,21 @@
     <section class="section section-2">
       <!-- Pauline -->
       <div class="button-div">
-        <button onClick="NextSlide(pauline)">←</button>
-        <button onClick="NextSlide(pauline)">→</button>
+        <button id="paulineRight" onClick="SwitchSlide(paulineChart, paulineText, paulineRight, paulineLeft)">←</button>
+        <button id="paulineLeft" onClick="SwitchSlide(paulineText, paulineChart, paulineLeft, paulineRight)" >→</button>
       </div>
-      <canvas id="chart3"></canvas>
-      <h4>Pourcentage d'agressions sur les femmes selon leur lieu d'habitation</h4>
-      <p>Étude réalisée sur un ensemble de femmes de 18 à 75 ans résidant en France métropolitaine<br>
-        Résultats moyens sur deux années pour des violences subies entre 2006 et 2012<br>
-        Sources : Insee, Observatoire national de la délinquance et des réponses pénales (ONDRP), enquête Cadre de la vie et de sécurité 2012</p>
+      <div id="paulineChart" class="wrapper-div">
+          <canvas id="chart3"></canvas>
+          <h4>Pourcentage d'agressions sur les femmes selon leur lieu d'habitation</h4>
+          <p>Étude réalisée sur un ensemble de femmes de 18 à 75 ans résidant en France métropolitaine<br>
+           Résultats moyens sur deux années pour des violences subies entre 2006 et 2012<br>
+            Sources : Insee, Observatoire national de la délinquance et des réponses pénales (ONDRP), enquête Cadre de la vie et de sécurité 2012</p>
+      </div>
+      <div id="paulineText" class="wrapper-div" display="none">
+        <p>Je suis un texte caché</p>
+      </div>
+
+
       </section>
       
       <section class="section section-3">
@@ -71,6 +78,8 @@
     </section>
     
   </div>
+
+  <script src="js/script.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="data/data2.js"></script>
