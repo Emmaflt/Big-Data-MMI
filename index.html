@@ -29,7 +29,7 @@
           <br>Ce graphique a été produit à partir d’une étude sur les morts au sein du couple en 2016 et en France, étude menée par le ministère de l’intérieur avec l’aide de la gendarmerie et la police nationale. Cette étude répertorie entre autres le cas de 109 femmes assassinées pour cause de féminicide en 2016.
           De nombreuses données nous sont données et nous avons choisi de prendre certaines d'entre elles et de les croiser. Le but de ce graphique est de représenter les différents chiffres autour des féminicides en 2016 en France et de dresser le profil type des victimes femmes, et donc de voir les causalité d’un 
           féminicide. On remarque alors qu’ils arrivent le plus souvent chez les couples mariés, et sont souvent précédés de violences physiques et psychologiques envers la victime : 63% de violences physiques et 15% psychologiques. Le motif qui pousse les meurtiers à l’acte est pour la plupart la séparation demandé par la femme. 
-          Cela arrive aussi par excès de jalousie (11% des cas), ou bien encore suite à une dispute (15%).
+          Cela arrive aussi par excès de jalousie (11% des cas), ou bien encore suite à une dispute (15%).<br>
           <br>Lecture :
           <br>En 2016 et en France, parmi les 109 femmes tuées par féminicide, 63% avaient subi des antécédents de violences physiques, et 47% ont été tuées car elles ont demandé la séparation.</p>      
       </div>
@@ -103,16 +103,22 @@
 
     <section class="section section-5">
       <!-- Maurine -->
-      <canvas id="chart2"></canvas>
-      <a id="download">
-        <button class="btn btn-primary" type="button" id="button2"> Télécharger le graphe</button>
-      </a>
-      <h4>Titre :  Les différentes poursuites judiciaires qu’encourent les agresseurs sexuels en fonction de leurs âges.</h4>
-      <p>Explication :<br>
-        Contexte : 16.8% des agresseurs sexuels ont entre 10 et 14 ans. Parmi eux, 97% sont mis en cause pour des violences sexuelles envers des personnes d’également entre 10 et 14 ans. Pour autant, 81 % des victimes ne se déplacent pas à la police ou à la gendarmerie pour signaler les faits. 
-        Le but de ce graphique est de représenter, parmi les agresseurs qui ont été mis en cause, les différentes poursuites judiciaires qu’encourent les agresseurs, notamment en fonction de leur âge.<br><br>
-        Lecture :<br>
-        En 2015, 92% des mineurs auteurs de violences sexuelles ont fait l’objet d’une réponse pénale ; dans 66% des cas, il s’agit d’une poursuite devant un tribunal ou un juge d'instruction.</p>
+      <div class="button-div">
+        <button id="maurineRight" onClick="SwitchSlide(maurineChart, maurineText, maurineRight, maurineLeft)">←</button>
+        <button id="maurineLeft" onClick="SwitchSlide(maurineText, maurineChart, maurineLeft, maurineRight)" >→</button>
+      </div>
+      <div id="maurineChart" class="wrapper-div">
+        <canvas id="chart2"></canvas>
+        <h2>Titre :  Les différentes poursuites judiciaires qu’encourent les agresseurs sexuels en fonction de leurs âges.</h2>
+      </div>
+      <div id="maurineText" class="wrapper-div">
+        <p>Explication :<br>
+          Contexte : 16.8% des agresseurs sexuels ont entre 10 et 14 ans. Parmi eux, 97% sont mis en cause pour des violences sexuelles envers des personnes d’également entre 10 et 14 ans. Pour autant, 81 % des victimes ne se déplacent pas à la police ou à la gendarmerie pour signaler les faits. 
+          Le but de ce graphique est de représenter, parmi les agresseurs qui ont été mis en cause, les différentes poursuites judiciaires qu’encourent les agresseurs, notamment en fonction de leur âge.<br>
+          Ainsi, malgré le taux très minime de plainte par les victimes, on remarque que le taux de réponse pénale des auteurs poursuivables est très élevé (en moyenne 90%). Ensuite, la majorité des cas se poursuivent devant un tribunal ou un juge d’instruction, et très peu vers une composition pénale réussie (0% pour les mineurs et 1% pour les majeurs). Enfin, le reste qui représente 17% (pour l’ensemble des mineurs et majeurs) poursuivent la plainte vers une mesure alternative réussie.<br><br>
+          Lecture :<br>
+          En 2015, 92% des mineurs auteurs de violences sexuelles ont fait l’objet d’une réponse pénale ; dans 66% des cas, il s’agit d’une poursuite devant un tribunal ou un juge d'instruction.</p>
+      </div>
     </section>
     
   </div>

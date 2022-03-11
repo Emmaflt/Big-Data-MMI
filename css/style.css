@@ -114,6 +114,14 @@ button:hover {
   display: none;
 }
 
+#maurineText {
+  display: none;
+}
+
+#maurineRight {
+  display: none;
+}
+
 #emmaText {
   display: none;
 }
