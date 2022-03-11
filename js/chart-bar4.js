@@ -15,7 +15,7 @@ const ctx4 = document.getElementById('chart4').getContext('2d');
                 backgroundColor:'#90dbf4',
                 borderWidth: 1.1,
                 order: 2,
-
+                xAxisID: "bottom-x-axis"
             },
             {
                 label: 'Années maximum de peines de prison en circonstances "aggravantes"',
@@ -25,11 +25,12 @@ const ctx4 = document.getElementById('chart4').getContext('2d');
                 backgroundColor: '#a3c4f3',
                 borderWidth: 1.1,
                 order: 3,
+                xAxisID: "bottom-x-axis"
             },
             {
                 type : 'scatter',
-                label: 'Nombre de plaintes de victimes de viol en milliers',
-                data: [ 16.815, 1.387, 6.969, 8.311 ],                
+                label: 'Nombre de plaintes de victimes de viol selon la population en %',
+                data: [ 0.02, 0.002, 0.067, 0.009 ],                
                 borderColor: '#AA7FFF',
                 backgroundColor: '#E6D9FF',
                 borderWidth: 1.1,
@@ -37,6 +38,7 @@ const ctx4 = document.getElementById('chart4').getContext('2d');
                 radius: 8,
                 hoverRadius : 12,
                 hoverradiusColor: '#D3F5F5',
+                xAxisID: "top-x-axis"
             },
             ]},
 
@@ -46,18 +48,17 @@ const ctx4 = document.getElementById('chart4').getContext('2d');
                     x: {
                         suggestedMax: 35,
                     }
+                    [{
+                        id: "top-y-axis",
+                        type: "linear",
+                        position: "top",
+                      }, {
+                        id: "bottom-y-axis",
+                        type: "linear",
+                        position: "bottom",
+                      }],
                 }
         },
 
     });
   
-  
-  
-  
-//     // récup. des data de l'image
-// let dataImage = canvas.toDataURL("image/png");
-// // modifie le type de données
-// dataImage = dataImage.replace("image/png", "image/octet-stream");
-// // affectation de l'adresse
-// lien.href = dataImage;
-
