@@ -10,6 +10,13 @@ p {
   margin-top: 0;
 }
 
+h2 {
+  font-size: large;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 .container_1 {
     height: 100vh;
     overflow-y: auto;
@@ -92,5 +99,9 @@ button:hover {
 }
 
 #paulineRight {
+  display: none;
+}
+
+#paulineText {
   display: none;
 }
