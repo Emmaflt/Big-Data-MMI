@@ -19,7 +19,7 @@ const ctx4 = document.getElementById('chart4').getContext('2d');
             },
             {
                 label: 'Années maximum de peines de prison en circonstances "aggravantes"',
-                data: [30, 30, 10, 0],
+                data: [30, 30, 10, 10],
                 order: 2,
                 borderColor: '#4895ef',
                 backgroundColor: '#a3c4f3',
