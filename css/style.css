@@ -4,7 +4,7 @@
   }
 
 p {
-  font-size: small;
+  font-size: medium;
   width: 60%;
   margin: auto;
   margin-top: 0;
@@ -92,6 +92,7 @@ a {
 }
 
 button {
+  margin-left: 20px;
   background-color:transparent;
   border: solid rgba(75, 192, 192, 0.5);
   border-radius: 5px;
