@@ -12,16 +12,24 @@
     
     <section class="section section-1">
       <!-- Enzo -->
-      <canvas class="wrapper" id="chartPie"></canvas>
-      <h4>Titre : Quelles sont les différentes causalités d’un fémicide par un homme en France en 2016</h4>
-      <p>
-        Explication :
-        <br>Ce graphique a été produit à partir d’une étude sur les morts au sein du couple en 2016 et en France, étude menée par le ministère de l’intérieur avec l’aide de la gendarmerie et la police nationale. Cette étude répertorie entre autres le cas de 109 femmes assassinées pour cause de féminicide en 2016.
-        De nombreuses données nous sont données et nous avons choisi de prendre certaines d'entre elles et de les croiser. Le but de ce graphique est de représenter les différents chiffres autour des féminicides en 2016 en France et de dresser le profil type des victimes femmes, et donc de voir les causalité d’un féminicide. On remarque alors qu’ils arrivent le plus souvent chez les couples mariés, et sont souvent précédés de violences physiques et psychologiques envers la victime : 63% de violences physiques et 15% psychologiques. Le motif qui pousse les meurtiers à l’acte est pour la plupart la séparation demandé par la femme. Cela arrive aussi par excès de jalousie (11% des cas), ou bien encore suite à une dispute (15%).
-        <br>Lecture :
-        <br>En 2016 et en France, parmi les 109 femmes tuées par féminicide, 63% avaient subi des antécédents de violences physiques, et 47% ont été tuées car elles ont demandé la séparation.
+      <div class="button-div">
+        <button id="enzoRight" onClick="SwitchSlide(enzoChart, enzoText, enzoRight, enzoLeft)">←</button>
+        <button id="enzoLeft" onClick="SwitchSlide(enzoText, enzoChart, enzoLeft, enzoRight)" >→</button>
+      </div>
+      <div id="enzoChart" class="wrapper-div">
+        <canvas class="wrapper" id="chartPie"></canvas>
+        <h2>Titre : Quelles sont les différentes causalités d’un fémicide par un homme en France en 2016</h2>
+      </div>
+      <div id="enzoText" class="wrapper-div">
+        <h2>Le lieu d’habitation influence t-il les risques d’agressions ?</h2>
+        <p>Explication :
+          <br>Ce graphique a été produit à partir d’une étude sur les morts au sein du couple en 2016 et en France, étude menée par le ministère de l’intérieur avec l’aide de la gendarmerie et la police nationale. Cette étude répertorie entre autres le cas de 109 femmes assassinées pour cause de féminicide en 2016.
+          De nombreuses données nous sont données et nous avons choisi de prendre certaines d'entre elles et de les croiser. Le but de ce graphique est de représenter les différents chiffres autour des féminicides en 2016 en France et de dresser le profil type des victimes femmes, et donc de voir les causalité d’un 
+          féminicide. On remarque alors qu’ils arrivent le plus souvent chez les couples mariés, et sont souvent précédés de violences physiques et psychologiques envers la victime : 63% de violences physiques et 15% psychologiques. Le motif qui pousse les meurtiers à l’acte est pour la plupart la séparation demandé par la femme. 
+          Cela arrive aussi par excès de jalousie (11% des cas), ou bien encore suite à une dispute (15%).
+          <br>Lecture :
+          <br>En 2016 et en France, parmi les 109 femmes tuées par féminicide, 63% avaient subi des antécédents de violences physiques, et 47% ont été tuées car elles ont demandé la séparation.</p>      </div>
 
-      </p>
     </section>
     
     <section class="section section-2">
@@ -37,7 +45,7 @@
            Résultats moyens sur deux années pour des violences subies entre 2006 et 2012<br>
             Sources : Insee, Observatoire national de la délinquance et des réponses pénales (ONDRP), enquête Cadre de la vie et de sécurité 2012</p>
       </div>
-      <div id="paulineText" class="wrapper-div" display="none">
+      <div id="paulineText" class="wrapper-div">
         <h2>Le lieu d’habitation influence t-il les risques d’agressions ?</h2>
         <p>Le premier tableau dresse un bilan des agressions sur la globalité de la France métropolitaine. Nous nous sommes alors demandé s'il existait des disparités notables selon le lieu d’habitation.<br>
           Le second tableau a permis de répondre à cette question mais aussi de mieux comprendre comment cette moyenne nationale se reflète dans les différents types de territoires.<br>
