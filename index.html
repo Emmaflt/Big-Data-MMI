@@ -12,16 +12,29 @@
     
     <section class="section section-1">
       <!-- Enzo -->
-      <canvas class="wrapper" id="chartPie"></canvas>
-      <h4>Titre : Quelles sont les différentes causalités d’un fémicide par un homme en France en 2016</h4>
-      <p>
-        Explication :
-        <br>Ce graphique a été produit à partir d’une étude sur les morts au sein du couple en 2016 et en France, étude menée par le ministère de l’intérieur avec l’aide de la gendarmerie et la police nationale. Cette étude répertorie entre autres le cas de 109 femmes assassinées pour cause de féminicide en 2016.
-        De nombreuses données nous sont données et nous avons choisi de prendre certaines d'entre elles et de les croiser. Le but de ce graphique est de représenter les différents chiffres autour des féminicides en 2016 en France et de dresser le profil type des victimes femmes, et donc de voir les causalité d’un féminicide. On remarque alors qu’ils arrivent le plus souvent chez les couples mariés, et sont souvent précédés de violences physiques et psychologiques envers la victime : 63% de violences physiques et 15% psychologiques. Le motif qui pousse les meurtiers à l’acte est pour la plupart la séparation demandé par la femme. Cela arrive aussi par excès de jalousie (11% des cas), ou bien encore suite à une dispute (15%).
-        <br>Lecture :
-        <br>En 2016 et en France, parmi les 109 femmes tuées par féminicide, 63% avaient subi des antécédents de violences physiques, et 47% ont été tuées car elles ont demandé la séparation.
+      <div class="button-div">
+        <a id="download">
+          <button class="button-style" type="button" id="button1"> Télécharger le graphe</button>
+        </a>
+        <button id="enzoRight" onClick="SwitchSlide(enzoChart, enzoText, enzoRight, enzoLeft)">←</button>
+        <button id="enzoLeft" onClick="SwitchSlide(enzoText, enzoChart, enzoLeft, enzoRight)" >→</button>
+      </div>
+      <div id="enzoChart" class="wrapper-div">
+        <canvas class="wrapper" id="chartPie"></canvas>
 
-      </p>
+        <h2>Les causalités d’un fémicide par un homme en France en 2016</h2>
+      </div>
+      <div id="enzoText" class="wrapper-div">
+        <h2>Quelles sont les différentes causalités d’un fémicide par un homme en France en 2016 ?</h2>
+        <p>Explication :
+          <br>Ce graphique a été produit à partir d’une étude sur les morts au sein du couple en 2016 et en France, étude menée par le ministère de l’intérieur avec l’aide de la gendarmerie et la police nationale. Cette étude répertorie entre autres le cas de 109 femmes assassinées pour cause de féminicide en 2016.
+          De nombreuses données nous sont données et nous avons choisi de prendre certaines d'entre elles et de les croiser. Le but de ce graphique est de représenter les différents chiffres autour des féminicides en 2016 en France et de dresser le profil type des victimes femmes, et donc de voir les causalité d’un 
+          féminicide. On remarque alors qu’ils arrivent le plus souvent chez les couples mariés, et sont souvent précédés de violences physiques et psychologiques envers la victime : 63% de violences physiques et 15% psychologiques. Le motif qui pousse les meurtiers à l’acte est pour la plupart la séparation demandé par la femme. 
+          Cela arrive aussi par excès de jalousie (11% des cas), ou bien encore suite à une dispute (15%).<br>
+          <br>Lecture :
+          <br>En 2016 et en France, parmi les 109 femmes tuées par féminicide, 63% avaient subi des antécédents de violences physiques, et 47% ont été tuées car elles ont demandé la séparation.</p>      
+      </div>
+
     </section>
     
     <section class="section section-2">
@@ -31,15 +44,17 @@
         <button id="paulineLeft" onClick="SwitchSlide(paulineText, paulineChart, paulineLeft, paulineRight)" >→</button>
       </div>
       <div id="paulineChart" class="wrapper-div">
-        <h2>Le lieu d’habitation influence t-il les risques d’agressions ?</h2>
           <canvas id="chart3"></canvas>
-          <h4>Pourcentage d'agressions sur les femmes selon leur lieu d'habitation</h4>
+          <a id="download">
+            <button class="btn btn-primary" type="button" id="button3"> Télécharger le graphe</button>
+          </a>
+          <h2>Pourcentage d'agressions sur les femmes selon leur lieu d'habitation</h2>
           <p>Étude réalisée sur un ensemble de femmes de 18 à 75 ans résidant en France métropolitaine<br>
            Résultats moyens sur deux années pour des violences subies entre 2006 et 2012<br>
             Sources : Insee, Observatoire national de la délinquance et des réponses pénales (ONDRP), enquête Cadre de la vie et de sécurité 2012</p>
       </div>
-      <div id="paulineText" class="wrapper-div" display="none">
-        <br>
+      <div id="paulineText" class="wrapper-div">
+        <h2>Le lieu d’habitation influence t-il les risques d’agressions ?</h2>
         <p>Le premier tableau dresse un bilan des agressions sur la globalité de la France métropolitaine. Nous nous sommes alors demandé s'il existait des disparités notables selon le lieu d’habitation.<br>
           Le second tableau a permis de répondre à cette question mais aussi de mieux comprendre comment cette moyenne nationale se reflète dans les différents types de territoires.<br>
           
@@ -55,36 +70,60 @@
       
       <section class="section section-3">
         <!-- Emma -->
+        <div class="button-div">
+          <button id="emmaRight" onClick="SwitchSlide(emmaChart, emmaText, emmaRight, emmaLeft)">←</button>
+          <button id="emmaLeft" onClick="SwitchSlide(emmaText, emmaChart, emmaLeft, emmaRight)" >→</button>
+        </div>
+        <div id="emmaChart" class="wrapper-div">
         <canvas id="chart4"></canvas>
         <a id="download">
           <button class="btn btn-primary" type="button" id="button4"> Télécharger le graphe</button>
         </a>
-        <h4>Existe-t-il un rapport entre les peines encourues pour les violeurs et le nombre de viols selon les pays?</h4>
+        <h2>Existe-t-il une corrélation entre les sanctions encourues pour un violeur et les plaintes déposées pour viol selon les pays ?</h2>
+      </div>
+      <div id="emmaText" class="wrapper-div">
+        <h2>Problématique : Est-il possible que les peines encourues pour un violeur le dissuade de passer à l’acte (selon les pays) ?</h2>
         <p>Pour répondre à cette question j'ai choisi de comparer les taux de viols par la population totale du pays concerné. Je constate que .....pays du plus élevé au moins élévé.
           On constate qu'il n'y a pas de corrélation entre les sanctions encourues et le nombre de plaintes de viols déposées.
           Face à cette analyse on peut poser deux hypothèses : 
           <br>- la sanction, même importante n'est pas décisive sur le passage à l'acte.
           <br>- lorsque les sanctions ne sont pas importantes, les femmes ne portent pas plainte car elles savent que les sanctions seront peu ou pas importantes pour l'agresseur. 
         </p>
+      </div>
       </section>
 
     <section class="section section-4">
       <!-- Alvina -->
       <canvas id="chart5"></canvas>
       <canvas id="chart52"></canvas>
+      <a id="download">
+        <button class="btn btn-primary" type="button" id="button5"> Télécharger le graphe</button>
+      </a>
       <p> Alvina </p>
     </section>
     
 
     <section class="section section-5">
       <!-- Maurine -->
-      <canvas id="chart2"></canvas>
-      <h4>Titre :  Les différentes poursuites judiciaires qu’encourent les agresseurs sexuels en fonction de leurs âges.</h4>
-      <p>Explication :<br>
-        Contexte : 16.8% des agresseurs sexuels ont entre 10 et 14 ans. Parmi eux, 97% sont mis en cause pour des violences sexuelles envers des personnes d’également entre 10 et 14 ans. Pour autant, 81 % des victimes ne se déplacent pas à la police ou à la gendarmerie pour signaler les faits. 
-        Le but de ce graphique est de représenter, parmi les agresseurs qui ont été mis en cause, les différentes poursuites judiciaires qu’encourent les agresseurs, notamment en fonction de leur âge.<br><br>
-        Lecture :<br>
-        En 2015, 92% des mineurs auteurs de violences sexuelles ont fait l’objet d’une réponse pénale ; dans 66% des cas, il s’agit d’une poursuite devant un tribunal ou un juge d'instruction.</p>
+      <div class="button-div">
+        <button id="maurineRight" onClick="SwitchSlide(maurineChart, maurineText, maurineRight, maurineLeft)">←</button>
+        <button id="maurineLeft" onClick="SwitchSlide(maurineText, maurineChart, maurineLeft, maurineRight)" >→</button>
+      </div>
+      <div id="maurineChart" class="wrapper-div">
+        <canvas id="chart2"></canvas>
+        <a id="download">
+          <button class="btn btn-primary" type="button" id="button2"> Télécharger le graphe</button>
+        </a>
+        <h2>Titre :  Les différentes poursuites judiciaires qu’encourent les agresseurs sexuels en fonction de leurs âges.</h2>
+      </div>
+      <div id="maurineText" class="wrapper-div">
+        <p>Explication :<br>
+          Contexte : 16.8% des agresseurs sexuels ont entre 10 et 14 ans. Parmi eux, 97% sont mis en cause pour des violences sexuelles envers des personnes d’également entre 10 et 14 ans. Pour autant, 81 % des victimes ne se déplacent pas à la police ou à la gendarmerie pour signaler les faits. 
+          Le but de ce graphique est de représenter, parmi les agresseurs qui ont été mis en cause, les différentes poursuites judiciaires qu’encourent les agresseurs, notamment en fonction de leur âge.<br>
+          Ainsi, malgré le taux très minime de plainte par les victimes, on remarque que le taux de réponse pénale des auteurs poursuivables est très élevé (en moyenne 90%). Ensuite, la majorité des cas se poursuivent devant un tribunal ou un juge d’instruction, et très peu vers une composition pénale réussie (0% pour les mineurs et 1% pour les majeurs). Enfin, le reste qui représente 17% (pour l’ensemble des mineurs et majeurs) poursuivent la plainte vers une mesure alternative réussie.<br><br>
+          Lecture :<br>
+          En 2015, 92% des mineurs auteurs de violences sexuelles ont fait l’objet d’une réponse pénale ; dans 66% des cas, il s’agit d’une poursuite devant un tribunal ou un juge d'instruction.</p>
+      </div>
     </section>
 
     <a class="Rick btn btn-info" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Pour plus d'information</a>
