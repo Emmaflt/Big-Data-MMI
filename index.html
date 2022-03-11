@@ -13,14 +13,15 @@
     <section class="section section-1">
       <!-- Enzo -->
       <div class="button-div">
+        <a id="download">
+          <button class="button-style" type="button" id="button1"> Télécharger le graphe</button>
+        </a>
         <button id="enzoRight" onClick="SwitchSlide(enzoChart, enzoText, enzoRight, enzoLeft)">←</button>
         <button id="enzoLeft" onClick="SwitchSlide(enzoText, enzoChart, enzoLeft, enzoRight)" >→</button>
       </div>
       <div id="enzoChart" class="wrapper-div">
         <canvas class="wrapper" id="chartPie"></canvas>
-        <a id="download">
-          <button class="btn btn-primary" type="button" id="button1"> Télécharger le graphe</button>
-        </a>
+
         <h2>Les causalités d’un fémicide par un homme en France en 2016</h2>
       </div>
       <div id="enzoText" class="wrapper-div">

@@ -71,6 +71,26 @@ h2 {
   width: auto;
   }
   
+.button-style {
+  background-color:transparent;
+  border: solid rgba(75, 192, 192, 0.5);
+  border-radius: 5px;
+  transition: 0.3s;
+  padding: 0 10px;
+  color:rgba(75, 192, 192, 1);
+  margin: 0;
+  margin-top: 20px;
+  font-size:large;
+  align-self: flex-end;
+}
+
+a {
+  height: fit-content;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
 button {
   background-color:transparent;
   border: solid rgba(75, 192, 192, 0.5);
@@ -91,6 +111,7 @@ button:hover {
   display: flex;
   justify-content: flex-end;
   width: 60%;
+  align-items: flex-end;
 }
 
 .wrapper-div {
