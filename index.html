@@ -98,17 +98,24 @@
         <a id="download">
           <button class="button-style" type="button" id="button5"> Télécharger le graphe</button>
         </a>
-        <button id="alvinaRight" onClick="SwitchSlide(alvinaChart, alvinaText, alvinaRight, alvinaLeft)">←</button>
-        <button id="alvinaLeft" onClick="SwitchSlide(alvinaText, alvinaChart, alvinaLeft, alvinaRight)" >→</button>
+        <button onClick="ShowSlide(alvinaChart, [alvinaChart2, alvinaText])">1</button>
+        <button onClick="ShowSlide(alvinaChart2, [alvinaChart, alvinaText])">2</button>
+        <button onClick="ShowSlide(alvinaText, [alvinaChart, alvinaChart2])">3</button>
       </div>
       <div id="alvinaChart" class="wrapper-div">
-        <canvas id="chart5"></canvas>
+        <canvas id="chart52" class="wrapper52"></canvas>
+        <br>
         <h2>Titre :  Distribution des scores de violences subies suivant la PCS des parents en 2008</h2>
         <p>Info complémentaires(1) non réponse /ne sait pas
           Champ : Français âgés de 17 ans convoqués à la JAPD en métropole en 2008
           Source : enquête Escapad, OFDT, 2008</p>
       </div>
+      <div id="alvinaChart2" class="wrapper-div">
+        <br>
+        <canvas id="chart5"></canvas>
+      </div>
       <div id="alvinaText" class="wrapper-div">
+        <br>
         <h2>Problématique : Le milieu social influence-t-il le nombre d’agressions subies ?</h2>
         <p>Afin de répondre au mieux à ma problématique j’ai décidé de faire deux graphiques pour comparer la quantité de violences subies
           selon le PCS (nomenclature des professions et catégories socioprofessionnelles) des parents et le type de violence subie.<br>
@@ -121,13 +128,6 @@
           
           <br>En conclusion, même si les données récoltées sont proches il existe tout de même de légères disparités entre les catégories professionnelles et surtout on peut noter qu’aucune d’elles n’est épargnée des agressions.</p>
       </div>
-
-      <canvas id="chart5"></canvas>
-      <canvas id="chart52"></canvas>
-      <a id="download">
-        <button class="btn btn-primary" type="button" id="button5"> Télécharger le graphe</button>
-      </a>
-      <p> Alvina </p>
     </section>
     
     <section class="section section-5">
