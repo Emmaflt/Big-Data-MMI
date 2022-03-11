@@ -127,6 +127,11 @@ button:hover {
   display: none;
 }
 
+.Rick{
+  width: 45vh;
+  margin-left:38vw;
+}
+  
 #enzoText {
   display: none;
 }
