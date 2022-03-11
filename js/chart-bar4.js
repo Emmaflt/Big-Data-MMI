@@ -29,7 +29,7 @@ const ctx4 = document.getElementById('chart4').getContext('2d');
             },
             {
                 type : 'scatter',
-                label: 'Nombre de plaintes de victimes de viol selon la population en %',
+                label: 'Pourcentage de plaintes de victimes de viol selon la population (en %)',
                 data: [ 0.02, 0.002, 0.067, 0.009 ],                
                 borderColor: '#AA7FFF',
                 backgroundColor: '#E6D9FF',
